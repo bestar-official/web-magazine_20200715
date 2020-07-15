@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<meta name="viewport" content="width=device-width">
+
+		<meta name="description" content="BESTAR WEBマガジン、7月15日号配信ページです。">
+		<meta name="keywords" content="BESTAR,美容学生,サロン">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>BESTAR 7月号</title>
+		<style type="text/css"></style>
+
+		<!-- <script type="text/javascript">
+		function check_number(){
+			if(form2.free_word2.value.match(/^[0-9]+$/)){
+			alert(form2.free_word2.value);}
+			else{alert("error!");}
+		}
+		</script> -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<table width="100%" cellspacing="0" cellpadding="0" style="border:0px solid blue;" bgcolor="white" align="center">
+			<header>
+				<img class="logo" src="./images/logo.jpg" alt="logo">
+            </header>
+			<div class="mainview">
+                <div class="title">
+                    <img class="title" src="./images/top.jpg" alt="title">
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/01.jpg" alt="柚井康大">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/yzkt_official/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yellow_ambassador">
+                    <img class="visual_pic" src="./images/02.jpg" alt="土屋花">
+                    <div class="InstagramY">
+                        <a href="https://www.instagram.com/hana__063/?hl=ja">
+                            <img src="./images/yellow_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/03.jpg" alt="金子真聖">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/machakaneko/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yellow_ambassador">
+                    <img class="visual_pic" src="./images/04.jpg" alt="竹下旬一郎">
+                    <div class="InstagramY">
+                        <a href="https://www.instagram.com/shun_belle/?hl=ja">
+                            <img src="./images/yellow_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/05.jpg" alt="猪狩恵菜">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/keina_igari/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yellow_ambassador">
+                    <img class="visual_pic" src="./images/06.jpg" alt="高道大和">
+                    <div class="InstagramY">
+                        <a href="https://www.instagram.com/yama_to.0225/?hl=ja">
+                            <img src="./images/yellow_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/07.jpg" alt="安達映海">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/5nyonyo_eimi/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yellow_ambassador">
+                    <img class="visual_pic" src="./images/08.jpg" alt="平山菜穂">
+                    <div class="InstagramY">
+                        <a href="https://www.instagram.com/hrymnh/?hl=ja">
+                            <img src="./images/yellow_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/09.jpg" alt="野原万由子">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/mayuko.nohara/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yellow_ambassador">
+                    <img class="visual_pic" src="./images/10.jpg" alt="夏山有紗">
+                    <div class="InstagramY">
+                        <a href="https://www.instagram.com/ali_chari77/?hl=ja">
+                            <img src="./images/yellow_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/11.jpg" alt="秋葉結衣">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/yui_akiba_/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yellow_ambassador">
+                    <img class="visual_pic" src="./images/12.jpg" alt="深澤梨歌">
+                    <div class="InstagramY">
+                        <a href="https://www.instagram.com/pear_fiore77/?hl=ja">
+                            <img src="./images/yellow_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/13.jpg" alt="中村雅空">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/gn___727/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yellow_ambassador">
+                    <img class="visual_pic" src="./images/14.jpg" alt="小林未来">
+                    <div class="InstagramY">
+                        <a href="https://www.instagram.com/m__39gram/?hl=ja">
+                            <img src="./images/yellow_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="green_ambassador">
+                    <img class="visual_pic" src="./images/15.jpg" alt="榊原菜桜">
+                    <div class="InstagramG">
+                        <a href="https://www.instagram.com/nao_stylinghair/?hl=ja">
+                            <img src="./images/green_insta.jpg" alt="インスタグラム">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+			<div class="footer">
+                <a href="https://bestar-official.github.io/web-magazine_20200708/">
+                    <img class="webMagazine" src="./images/20200708.jpg" alt="back_button">
+                </a>
+
+                <!-- <img src="./images/under_line.png" alt="アンダーライン"> -->
+                <a href="https://aura-mico.jp/qr-codes/5683/s">
+                    <img class="back_button" src="./images/back_button.jpg" alt="back_button">
+                </a>
+            </div>
+		</table>
+	</body>
+</html>
