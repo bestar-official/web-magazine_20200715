@@ -26,6 +26,7 @@ a {
 .green_ambassador {
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .InstagramG {
@@ -35,9 +36,14 @@ a {
     left: 52%;
 }
 
+.visual_pic {
+    width: 100%;
+}
+
 .yellow_ambassador {
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .InstagramY {
