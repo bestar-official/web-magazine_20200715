@@ -20,14 +20,52 @@
 			alert(form2.free_word2.value);}
 			else{alert("error!");}
 		}
-		</script> -->
+        </script> -->
+        
+        <script type="text/javascript">
+        $('.menu__button').on('click',function(){
+            $('.menu').toggleClass('menu--isOpen');
+        });
+        </script>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	</head>
 	<body>
 		<table width="100%" cellspacing="0" cellpadding="0" style="border:0px solid blue;" bgcolor="white" align="center">
 			<header>
-				<img class="logo" src="./images/logo.jpg" alt="logo">
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                    <div id="nav-content">
+                        <div class="hamburger">◇◇◇7月号◇◇◇</div>
+                        <a href="https://bestar-official.github.io/web-magazine_20200708/">
+                            <img src="./images/7_1.jpg">
+                        </a>
+                        <a href="https://bestar-official.github.io/web-magazine_20200715/">
+                            <img src="./images/7_2.jpg">
+                        </a>
+                        <a href="https://bestar-official.github.io/web-magazine_20200722/">
+                            <img src="./images/7_3.jpg">
+                        </a>
+                        <a href="https://bestar-official.github.io/web-magazine_20200729/">
+                            <img src="./images/7_4.jpg">
+                        </a>
+                        <!-- <div class="hamburger"><a href="https://bestar-ch.jp/">1. </a></div>
+                        <div class="hamburger"><a href="https://bestar-ch.jp/">content2</a></div>
+                        <div class="hamburger"><a href="https://bestar-ch.jp/">content3</a></div> -->
+                    </div>
+                </div>
+<!-- 
+                <div class="menu">
+                    <button class="menu__button">
+                        <span class="menu__lineTop"></span>
+                        <span class="menu__lineMiddle"></span>
+                        <span class="menu__lineBottom"></span>
+                    </button>
+                </div> -->
+                <img class="logo" src="./images/logo2.png" alt="logo">
+                <!-- <img class="logo" src="./images/logo.jpg" alt="logo"> -->
             </header>
 			<div class="mainview">
                 <div class="title">
@@ -180,6 +218,17 @@
                     <img class="back_button" src="./images/back_button.jpg" alt="back_button">
                 </a>
             </div>
+
+
+            <!-- <div class="sample">
+                <img class="type" src="./images/type.jpg" alt="榊原菜桜">
+                <div class="try">
+                    <a href="">
+                        <img src="./images/button.jpg" alt="インスタグラム">
+                    </a>
+                </div>
+            </div> -->
+
 		</table>
 	</body>
 </html>
